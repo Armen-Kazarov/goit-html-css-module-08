@@ -217,7 +217,7 @@ button {
     background: #4e73db url("../img/icons/telegram.png") no-repeat center;
 }
 
-.partner-photo {
+.partner-photo-img {
     border-radius: 50%;
 }
 
@@ -247,8 +247,8 @@ button {
 @media (min-width: 768px) {
     .header {
         padding-top: 38px;
-        padding-bottom: 254px;
-        background:  #1A1915 url("../img/header/tabletbg.png") no-repeat center / cover;
+        padding-bottom: 234px;
+        background-image:  url("../img/header/tabletbg.png");
     }
 
     .container {
@@ -272,7 +272,7 @@ button {
     .header-title {
         font-size: 52px;
         line-height: 1.2;
-        margin-top: 154px;
+        margin-top: 148px;
     }
 
     .header-title-text {
@@ -339,7 +339,52 @@ button {
         padding-left: 10px;
         padding-right: 10px;
     }
+}
 
+@media (min-width: 960px) {
+    .header {
+        background-image: url("../img/header/desktopbg.png");
+    }
 
+    .container {
+        width: 942px;
+    }
 
+    .header-nav-menu {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .authorization-btn {
+        cursor: pointer;
+    }
+
+    .partner-section-description-text {
+        margin-top: 72px;
+    }
+
+    .partner-card-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .partner-card-list-item {
+        width: 220px;
+    }
+
+    .partner-card-list-item:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .partner-card-description-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .partner-section {
+        padding-bottom: 72px;
+    }
 }
