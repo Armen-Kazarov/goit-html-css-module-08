@@ -102,7 +102,7 @@ button {
     margin-top: 120px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.5px;
     font-family: var(--first-font);
     font-weight: 700;
     font-size: 20px;
@@ -178,7 +178,7 @@ button {
     color: var(--section-subtitles-color);
 }
 
-.partner-card + .partner-card {
+.partner-card-list-item + .partner-card-list-item {
     margin-top: 30px;
 }
 
@@ -242,4 +242,104 @@ button {
     margin-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding-top: 38px;
+        padding-bottom: 254px;
+        background:  #1A1915 url("../img/header/tabletbg.png") no-repeat center / cover;
+    }
+
+    .container {
+        width: 748px;
+    }
+
+    .header-nav-menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 40px;
+        padding-left: 36px;
+    }
+
+    .logo {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .header-title {
+        font-size: 52px;
+        line-height: 1.2;
+        margin-top: 154px;
+    }
+
+    .header-title-text {
+        display: block;
+    }
+
+    .header-description-text {
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 40px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .header-btn-link {
+        margin-top: 34px;
+        width: 226px;
+    }
+
+    .partner-section {
+        padding-bottom: 40px;
+    }
+
+    .section-btn-link {
+        margin-top: 38px;
+        width: 192px;
+    }
+
+    .partner-section-description-text {
+        margin-top: 74px;
+        margin-bottom: 34px;
+    }
+
+    .partner-card-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
+    .partner-card-list-item {
+        width: 236px;
+    }
+
+    .partner-card-list-item:nth-last-child(-n+3) {
+        margin-top: 0;
+    }
+
+    .partner-card-list-item:first-child {
+        order: -2;
+    }
+
+    .partner-card-list-item:nth-child(3) {
+        order: -1;
+    }
+
+    .partner-card-list-item:nth-child(even) {
+        margin-top: 58px;
+    }
+
+    .partner-card-description-text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+
 }
